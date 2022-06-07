@@ -2,7 +2,7 @@ import adapter from '@sveltejs/adapter-static';
 import { normalizePath } from 'vite';
 import path from 'path';
 
-//const dev = (process.env.NODE_ENV == 'development') 
+const dev = (process.env.NODE_ENV == 'development') 
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -15,11 +15,11 @@ const config = {
         }),
         prerender : { 
 			default: true // need this to get it to create index.html in docs, which is needed for github pages 
-		}/*,
+		},
         paths: {
             // change below to your repo name
             base: dev ? "" : "/sveltekit_test",
-		}*/
+		}
 	}
 };
 
