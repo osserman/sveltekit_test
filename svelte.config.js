@@ -9,6 +9,9 @@ const config = {
             pages: "docs",
             assets: "docs"
         }),
+        prerender : { 
+			default: true
+		},
         paths: {
             // change below to your repo name
             base: dev ? "" : "/sveltekit_test",
