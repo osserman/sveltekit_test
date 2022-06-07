@@ -15,7 +15,6 @@
 </svelte:head>
 
 <section>
-    <div>Main Content</div>
     <ProjectGrid />
 </section>
 

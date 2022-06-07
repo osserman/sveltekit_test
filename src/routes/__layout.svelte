@@ -1,7 +1,7 @@
 <script>
 	import Header from '$lib/Header.svelte';
 	import '../app.css';
-	// import Footer from '$lib/Footer.svelte';
+	import Footer from '$lib/Footer.svelte';
 	let showFooter = false; 
 </script>
 <svelte:head>
@@ -18,8 +18,7 @@
 </main>
 <div class='footer-toggle'><button on:click={() => {showFooter = !showFooter}}>About Stephen</button> </div>
 {#if showFooter}
-<!--<Footer on:togglefooter={() => {showFooter=!showFooter}}/>-->
-	<div>Footer</div>
+<Footer on:togglefooter={() => {showFooter=!showFooter}}/>
 {/if}
 <style>
 

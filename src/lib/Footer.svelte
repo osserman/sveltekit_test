@@ -1,14 +1,14 @@
 <script> 
-//import {slide} from 'svelte/transition';
-//import { createEventDispatcher } from 'svelte';
-//const dispatch = createEventDispatcher(); 
+	import {slide} from 'svelte/transition';
+	import { createEventDispatcher } from 'svelte';
+	const dispatch = createEventDispatcher(); 
 </script>
 
 <footer>
-  <!-- <div transition:slide>
+    <div transition:slide>
         <p>Hi, I'm Stephen. I'm a Visualization Developer and Data Scientist with over a decade of experience working with political and civic data. My academic background includes degrees in <em>Ethnicity, Race, and Migration</em>; in <em>Music</em>; and in <em>Spatial Analysis for Public Health</em>. The past few years I've been doing more Data Storytelling work and this page contains a sample of projects I've worked on along this journey.
         <button class='close' on:click="{() => {dispatch('togglefooter')}}">Close</button> </p>
-    </div>--> 
+    </div>
 </footer>
 
 <style>
